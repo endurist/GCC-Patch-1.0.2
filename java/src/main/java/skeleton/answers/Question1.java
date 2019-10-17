@@ -22,6 +22,8 @@ public class Question1 {
         	numOfMonth++;
         }
         totalPayment = numOfMonth * monthlyRepayment + currentDebt + deposite;
+        double fraction = totalPayment % 1;
+        totalPayment -= fraction;
         
         return totalPayment;
     }
